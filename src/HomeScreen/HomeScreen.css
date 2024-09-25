@@ -1,0 +1,67 @@
+.whole-bg{
+  height: 110vw;
+}
+
+
+
+
+
+
+.home-info-container {
+    display: block !important;
+    position: relative;
+    
+}
+
+.homeinfo{
+    position: relative;
+    top: 140px;
+}
+
+
+.ball1,
+.ball2,
+.ball3,
+.ball4 {
+  position: absolute;
+  filter: blur(4px);
+  background-image: linear-gradient(45deg, #212a27, #000000, #75e3e0, #74eadc);
+  border-radius: 50%;
+  box-shadow: #000000 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    #000000 0px 4px 6px, #8c8c8c8c 0px 12px 13px, #8c8c8c 0px -3px 5px;
+  animation: FitBallAni 2s ease-in-out infinite alternate-reverse;
+}
+@keyframes FitBallAni {
+  from {
+    transform: scale(0.9);
+    transform: translateY(-20%);
+  }
+  to {
+    transform: scale(1);
+    transform: translateY(0%);
+  }
+}
+.ball1 {
+  top: 150px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+}
+.ball2 {
+  bottom: 50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+}
+.ball3 {
+  bottom: -60px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+}
+.ball4 {
+  top: 120px;
+  right: 300px;
+  width: 80px;
+  height: 80px;
+}

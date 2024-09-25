@@ -1,0 +1,120 @@
+/*Announcement Card */
+.announcement-card {
+    width: 520px; 
+    height: 480px; 
+    background-color: #1a1a2e; 
+    color: #e7e7de; 
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    opacity: 0;
+    overflow: hidden; 
+    animation: slide-in-from-right 0.8s ease forwards; 
+    position: relative;
+    padding: 0 20px 20px 20px;
+}
+
+.announcement-card:hover {
+    transform: scale(1.03); 
+    box-shadow: 0px 6px 20px rgba(0, 188, 212, 0.7);
+}
+
+
+.announcements-title {
+    height:40px !important;
+    display: flex;
+   
+    justify-content: start;
+    align-items: center;
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e3270d;
+    padding: 15px 0;
+    transition: color 0.3s ease;
+}
+
+.announcements-title img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; 
+}
+
+.announcements-title h4{
+    color: #e3270d; 
+    font-family: Mulish, sans-serif;
+    
+    font-weight: 600;
+}
+
+
+.announcement-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0; 
+    font-family: Mulish, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #00bcd4;
+    transition: background-color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
+}
+
+.announcement-item:hover {
+    background-color: #0f3460; 
+    transform: translateX(10px); 
+    font-weight: 700;
+    color: #e7e7de; 
+    text-decoration: underline;
+}
+
+
+.announcement-icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-color: #71c2d1; 
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.announcement-item:hover .announcement-icon {
+    transform: scale(1.2);
+}
+
+
+.bullet-icon {
+    width: 30px;
+    margin-right: 10px; 
+    color: #e3270d; 
+}
+
+
+.announcement-link {
+    color: #00bcd4; 
+    font-family: Mulish, sans-serif;
+    font-size: 16px; 
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 10px;
+    transition: font-weight 0.3s ease, color 0.3s ease;
+}
+
+.announcement-link:hover {
+    font-weight: 700;
+    color: #e7e7de;
+    text-decoration: underline;
+}
+
+
+@keyframes slide-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}

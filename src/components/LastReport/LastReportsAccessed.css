@@ -1,0 +1,219 @@
+/* 
+.report-card {
+    width: 520px;
+    height: 480px;
+    background-color: #1a1a2e; 
+    color: #e7e7de; 
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    opacity: 0; 
+    transform: translateX(-100%); 
+    animation: slide-in-from-left 0.8s ease forwards;
+}
+
+.report-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 20px rgba(0, 188, 212, 0.7); 
+}
+
+
+.report-title {
+    height: 40px !important;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00bcd4 !important; 
+    padding: 15px;
+    transition: color 0.3s ease;
+}
+.report-title-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .report-title-icon {
+    font-size: 20px; 
+    margin-right: 8px; 
+  }
+  
+  .report-title {
+    font-weight: 900; 
+    color: #999; 
+  }
+  
+
+.report-item {
+    display: flex;
+    align-items: center !important;
+    justify-content: start !important;
+    padding: 15px 5px !important;
+    transition: background-color 0.3s ease;
+}
+
+.report-item:hover {
+    background-color: #0f3460; 
+}
+
+
+.report-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    background-color: #fff; 
+    border-radius: 50%; 
+    padding: 5px; 
+}
+
+.report-item:hover .report-icon {
+    transform: scale(1.2); 
+}
+
+
+.report-link {
+    color: #00bcd4; 
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-left: 10px;
+    transition: font-weight 0.3s ease, color 0.3s ease;
+}
+
+.report-link:hover {
+    font-weight: 700;
+    color: #e7e7de; 
+    text-decoration: underline;
+}
+
+
+@keyframes slide-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+/* Report Card */
+
+
+
+.report-card {
+    width: 520px;
+    height: max-content;
+    /* Adjust for dynamic content */
+    background-color: #1a1a2e;
+    color: #e7e7de;
+    box-shadow:inset 0 4px 20px rgba(0, 188, 212, 0.6); /* Shadow for popup effect */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    animation: slide-in-from-left 0.8s ease forwards;
+}
+
+.report-title-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.report-title-icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.report-title {
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f1f3f4;
+    padding: 10px;
+}
+
+.report-title:hover{
+    color: aqua;
+}
+
+
+.report-popup {
+    background-color: #16213e; /* Dark background for popup */
+    padding: 20px;
+    border-radius: 8px;
+    
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    animation: popup-appear 0.3s ease;
+}
+
+@keyframes popup-appear {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.report-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.report-item:hover {
+    background-color: #0f3460;
+}
+
+.report-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.report-item:hover .report-icon {
+    transform: scale(1.2);
+    filter: hue-rotate(120deg); 
+}
+
+
+.report-link {
+    color: #00bcd4;
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-left: 10px;
+    transition: font-weight 0.3s ease, color 0.3s ease;
+}
+
+.report-link:hover {
+    font-weight: 700;
+    color: #e7e7de;
+    text-decoration: underline;
+}
+
+
+@keyframes slide-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
